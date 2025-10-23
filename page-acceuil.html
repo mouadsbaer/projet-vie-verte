@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="css/page-acceuil.css">
 </head>
 
+<!-- Mohammed lfarh-->
+
 <body>
+  <nav>
+<div class="logo">
+<img src="imgs/logo.png" alt="Logo image">
+<img src="imgs/image.png" alt="Logo titre">
+</div>
+
+<button class="menu-btn" id="menu-btn">☰</button>
+
+<ul id="menu">
+<li><a href="page-acceuil.html" class="active">Accueil</a></li>
+<li><a href="page-projets.html">Projets</a></li>
+<li><a href="page-participer.html">Participer</a></li>
+<li><a href="page-education.html">Éducation</a></li>
+<li><a href="page-actualités.html">Actualités</a></li>
+</ul>
+</nav>
+  <header>
+  
+     <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>GreenPulse</h1>
+      <h4>L’innovation au service d’un avenir durable</h2>
+      <p>
+        Rejoignez une communauté engagée pour transformer nos villes en espaces plus verts, 
+        plus innovants et plus respectueux de l’environnement.
+      </p>
+    </div>
+  </header>
      <section>
       <h2>Avantages et valeurs de la plateforme</h2>
       <div class="features">
@@ -80,7 +110,30 @@
     </section>
 
     <footer>
-      © 2025 GreenPulse — Tous droits réservés.
+        <p>&copy 2025 GreenPulse. Tous droits réservés.</p>
+        <p>Designed by GreenPulse Team</p>
     </footer>
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+
+        btn.addEventListener("click", () => {
+
+        if (menu.style.display === "flex") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "flex";
+        }
+        });
+
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth >= 768) {
+            menu.style.display = "flex";
+          } else {
+            menu.style.display = "none";
+          }
+    });
+  </script>
 </body>
 </html>
