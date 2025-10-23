@@ -1,1 +1,222 @@
 /* Lfarh */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7fbf7;
+    color: #0b3b1f;
+    line-height: 1.5;
+    
+  }
+  header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.715), rgba(0, 0, 0, 0.732)), url(../imgs/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-118143566.webp); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 180px; 
+    width: 100%;
+    
+  }
+  nav {
+      background-color: #003317;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .logo img {
+      height: 25px;
+      width: auto;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      background-color: #003317;
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      text-align: center;
+      display: none;
+      right: 0;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      display: block;
+    }
+
+    ul li a:hover {
+      background-color: #005f2e;
+    }
+
+    .menu-btn {
+      font-size: 26px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+      ul {
+        position: static;
+        flex-direction: row;
+        display: flex;
+        width: auto;
+        background: none;
+      }
+      .menu-btn {
+        display: none;
+      }
+    } 
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); 
+  }
+
+  header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    color: #16D32C;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  header h4 {
+    color: #16D32C;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+  }
+h2{
+    text-align: center;
+    font-family: parua one;
+   letter-spacing: 2px;
+   font-weight: 600;
+   font-size: 5vmin;
+    padding: 15px 0;
+    margin: 60px 0;
+}
+.card{
+        width: 80%;
+        height: 100%;
+        justify-self: center;
+   
+        margin: 20px;
+        border-radius: 10px;
+        color: #130303;
+        padding: 10px;
+        border: 3px solid #2DC653;
+        transition: all 1.3s ease;
+}
+.card:hover{
+       background:linear-gradient(to right, #2dc653bc, #25a244ab 30% , #208b3bb3 70% , #155d27a7);
+       box-shadow: 6px 6px 20px 2px #17ca41;
+}
+p{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: #e0380a;
+}
+.gallery {
+  margin: 12px 0;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius:10px 10px 0 0 ;
+  height: 200px;
+}
+ .imgp{
+        width: 80%;
+        justify-self: center;
+        background:linear-gradient(180deg, #2b7a3a, #1f5f2e);
+        margin: 20px;
+        border-radius: 10px;
+        color: #ffffff;
+}
+.imgp p{
+    padding: 15px;
+}
+.imgp:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    background: linear-gradient(to right , #2B9348 , #06CF24);
+}
+h4{
+    font-size: larger;
+    text-align: center;
+    color: #2b7a3a;
+    text-decoration: underline;
+}
+
+@media (min-width:950px){
+        .card{
+            width: 350px;
+            display: grid;
+            margin: 0 50px;
+            height: 200px;
+            padding: 20px;
+        }
+        .gallery1{
+            display: flex;
+        }
+        .gallery2{
+            display: flex;
+        }
+        .features{
+            display: flex;
+            justify-content: space-between;
+            justify-self: center;
+            
+        }
+        
+    }
