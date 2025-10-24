@@ -6,15 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Participer</title>
     <link rel="stylesheet" href="css/page-participer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <!--Page de hakim-->
 
 <body>
 
+    <header class="header_globale">
+        <div class="contenair">
+            <div class="contenair_navbar">
+                <div class="contenair_logo">
+                    <img src="imgs\logo.webp" alt="">
+                    <img src="imgs\logotitre.webp" alt="" class="titre">
+                </div>
+                <div class="menu">
+                    <ul id="menuList">
+                        <li><a href="page-acceuil.html" >Accueil</a></li>
+                        <li><a href="page-projets.html">Projets</a></li>
+                        <li><a href="page-participer.html"class="active">Participer</a></li>
+                        <li><a href="page-education.html">Éducation</a></li>
+                        <li><a href="page-actualités.html">Actualités</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </div>
+            <h1>GreenPulse - L'innovation au <br> service d'un avenir durable</h1>
+            <div class="contenair_corps">
+                <div class="mid">
+                    <h1>Devenez un acteur du changement au quotidien</h1>
+                    <p>Explorer les initiatives</p>
+                </div>
+                <div class="mid-img">
+                    <img src="imgs\header_photo.webp" alt="">
+                </div>
+            </div>
+            <div class="mid_footer">
+                <div class="btn2">
+                    <a href="#prem" class="btn_vert">1. Comment Participer</a>
+                    <a href="#deu" class="btn_vert">2. Formulaire de Participation</a>
+                    <a href="#troi" class="btn_vert">3. Témoignages de Bénévoles</a>
+                    <a href="#" class="vert_petit"><i class="fa-solid fa-right-left"></i></a>
+                    <a href="#" class="vert_petit"><i class="fa-solid fa-right-left"></i></a>
+                </div>
+
+                <div class="btn_yellow">
+                    <button><a href="#">Découvrir maintenant</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="soleil_cercle"></div>
+        <div class="stars" id="stars"></div>
+    </header>
+
     <section class="com-part">
         <div class="titre-part">
-            <h1>Comment Participer</h1>
+            <h1 id="prem">Comment Participer</h1>
             <p>Que vous souhaitiez rejoindre un projet existant ou créer votre propre initiative, votre engagement peut
                 faire la différence</p>
         </div>
@@ -24,9 +72,9 @@
                 <h3>Rejoindre un Projet</h3>
                 <p>Explorez les projets en cours et trouvez celui qui correspond à vos passions et compétences. Chaque
                     contribution compte, quelle que soit sa taille.</p>
-                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i>  Parcourez les opportunités</p>
-                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i>  Contactez les coordinateurs</p>
-                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i>  Commencez à faire la différence</p>
+                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i> Parcourez les opportunités</p>
+                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i> Contactez les coordinateurs</p>
+                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i> Commencez à faire la différence</p>
             </div>
 
             <div class="card-part">
@@ -34,9 +82,9 @@
                 <h3>Créer une Initiative</h3>
                 <p>Vous avez une idée qui peut changer les choses ? Lancez votre propre projet et mobilisez une équipe
                     autour de votre vision.</p>
-                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i>  Soumettez votre proposition</p>
-                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i>  Recevez du soutien et des ressources</p>
-                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i>  Recrutez des bénévoles engagés</p>
+                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i> Soumettez votre proposition</p>
+                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i> Recevez du soutien et des ressources</p>
+                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i> Recrutez des bénévoles engagés</p>
             </div>
 
             <div class="card-part">
@@ -44,9 +92,9 @@
                 <h3>Devenir Bénévole</h3>
                 <p>Offrez votre temps, vos compétences et votre énergie pour soutenir des causes qui vous tiennent à
                     cœur et créer un impact durable.</p>
-                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i>  Inscrivez-vous via le formulaire</p>
-                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i>  Participez à des formations</p>
-                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i>  Rejoignez une communauté active</p>
+                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i> Inscrivez-vous via le formulaire</p>
+                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i> Participez à des formations</p>
+                <p><i class="fa-regular fa-circle" style="color: #00b700;"></i> Rejoignez une communauté active</p>
             </div>
         </div>
     </section>
@@ -54,13 +102,13 @@
 
     <section class="formulaire">
         <div class="for-bar">
-            <h3>Formulaire de Participation</h3>
+            <h3 id="deu">Formulaire de Participation</h3>
             <p>Remplissez ce formulaire pour commencer votre aventure avec nous.</p>
         </div>
         <div class="for">
             <div class="for-group">
                 <label for="nom">Nom Complet <span class="required">*</span></label>
-                <input type="text" id="nom" name="nom" required autofocus>
+                <input type="text" id="nom" name="nom" required >
             </div>
 
             <div class="for-group">
@@ -69,7 +117,7 @@
             </div>
             <div class="for-group">
                 <label for="tele">Téléphone <span class="required">*</span></label>
-                <input type="text" id="tele" name="tele" required autofocus>
+                <input type="text" id="tele" name="tele" required >
             </div>
             <div class="for-group">
                 <label for="type">Je souhaite <span class="required">*</span></label>
@@ -96,7 +144,7 @@
 
     <section class="Temoig">
         <div class="titre-part">
-            <h1>Témoignages de Bénévoles</h1>
+            <h1 id="troi">Témoignages de Bénévoles</h1>
             <p>Découvrez les expériences inspirantes de ceux qui ont choisi de s'engager</p>
         </div>
 
@@ -209,6 +257,8 @@
             <p>Cookies Disclaimer-Privacy Policy</p>
         </div>
     </footer>
+
+    <script src="dark.js"></script>
 
 </body>
 
