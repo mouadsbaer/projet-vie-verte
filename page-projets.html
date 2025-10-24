@@ -3,10 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets & </title>
+    <title>Green-Pulse Projets & </title>
+    <link rel="stylesheet" href="css/page-projets.css">
 </head>
 <!--Page de Mouad zyani-->
-<body>
-    
-</body>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="imgs/logo.png" alt="Logo titre" />
+        <img src="imgs/image.png" alt="Logo image" />
+      </div>
+      <button class="menu-btn" id="menu-btn">☰</button>
+      <ul id="menu">
+        <li><a href="page-acceuil.html">Accueil</a></li>
+        <li><a href="#"class="active">Projets</a></li>
+        <li><a href="page-participer.html">Participer</a></li>
+        <li><a href="page-education.html">Éducation</a></li>
+        <li><a href="page-actualités.html">Actualités</a></li>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+      </ul>
+    </nav>
+
+    <main>
+        <header class="header">
+          <p><i class="fa-solid fa-leaf"></i> Projets & Initiatives</p>
+          <h1>Construisons un Avenir Durable</h1>
+          <p>
+            Découvrez les projets écologiques qui transforment nos villes en
+            espaces plus verts et durables
+          </p>
+          <div class="stats">
+            <div><i class="fa-solid fa-seedling"></i> 6 projets actifs</div>
+            <div><i class="fa-solid fa-city"></i> 6 villes participantes</div>
+          </div>
+        </header>
+
+      <section class="filters">
+        <a href="#" data-filter="all"><i class="fa-solid fa-leaf"></i> Tous</a>
+        <a href="#" data-filter="recyclage"
+          ><i class="fa-solid fa-recycle"></i> Recyclage</a
+        >
+        <a href="#" data-filter="energie"
+          ><i class="fa-solid fa-solar-panel"></i> Énergie</a
+        >
+        <a href="#" data-filter="transport"
+          ><i class="fa-solid fa-bus"></i> Transport</a
+        >
+        <a href="#" data-filter="biodiversite"
+          ><i class="fa-solid fa-frog"></i> Biodiversité</a
+        >
+        <a href="#" data-filter="eau"
+          ><i class="fa-solid fa-droplet"></i> Eau</a
+        >
+      </section>
+
+      <h2 class="titre-projet">Nos Projets</h2>
+      <div class="cards__project">
+        <div class="card" data-category="recyclage">
+          <img src="imgs/triIntelligent.jpg" alt="Centre de Tri" />
+          <div class="card-content">
+            <h3>Centre de Tri Intelligent</h3>
+            <small><i class="fa-solid fa-location-dot"></i> Casablanca</small>
+            <p>
+              Un centre de recyclage moderne équipé de technologies de tri
+              automatisé pour optimiser le traitement des déchets urbains.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div>
+              <h5><i class="fa-solid fa-handshake"></i> Partenaires</h5>
+              <p>Ville de Casablanca</p>
+              <p>EcoMaroc</p>
+              <p>GreenTech</p>
+            </div>
+            <div>
+              <h5><i class="fa-solid fa-bullseye"></i> Objectif</h5>
+              <p>Recycler 80% des déchets ménagers d'ici 2026</p>
+            </div>
+          </div>
+          <a href="#" class="btn-green">Découvrir le projet</a>
+        </div>
+        <div class="card" data-category="energie">
+          <img src="imgs/solaire.jpg" alt="Parc Solaire Communautaire" />
+          <div class="card-content">
+            <h3>Parc Solaire Communautaire</h3>
+            <small><i class="fa-solid fa-location-dot"></i> Marrakech</small>
+            <p>
+              Installation de panneaux solaires sur les toits des batiments
+              publics pour produire une energie propre et accessible
+            </p>
+          </div>
+          <div class="card-footer">
+            <div>
+              <h5><i class="fa-solid fa-handshake"></i> Partenaires</h5>
+              <p>Ville de Marrakeck</p>
+              <p>Masen</p>
+              <p>SolarMaroc</p>
+            </div>
+            <div>
+              <h5><i class="fa-solid fa-bullseye"></i> Objectif</h5>
+              <p>Produire 5MW d’énergie solaire pour 2000 foyers</p>
+            </div>
+          </div>
+          <a href="#" class="btn-green">Découvrir le projet</a>
+        </div>
+        <div class="card" data-category="transport">
+          <img
+            src="imgs/velo-electrique.jpg"
+            alt="Réseau de Vélos Electrique" />
+          <div class="card-content">
+            <h3>Réseau de Vélos Electrique</h3>
+            <small><i class="fa-solid fa-location-dot"></i> Rabat</small>
+            <p>
+              Mise en place d’un système de vélos electriques en libre service
+              pour reduire les emissions de CO2 en ville
+            </p>
+          </div>
+          <div class="card-footer">
+            <div>
+              <h5><i class="fa-solid fa-handshake"></i> Partenaires</h5>
+              <p>Ville de rabat</p>
+              <p>BikeGreen</p>
+              <p>Durable Transport</p>
+            </div>
+            <div>
+              <h5><i class="fa-solid fa-bullseye"></i> Objectif</h5>
+              <p>500 velos disponibles dans 50 stations</p>
+            </div>
+          </div>
+          <a href="#" class="btn-green">Découvrir le projet</a>
+        </div>
+        <div class="card" data-category="biodiversite">
+          <img
+            src="imgs/ForetVertical.jpg"
+            alt="Foret Verticale Urbaine" />
+          <div class="card-content">
+            <h3>Foret Verticale Urbaine</h3>
+            <small><i class="fa-solid fa-location-dot"></i> Agadir</small>
+            <p>
+              Construction d’immeubles eccologiques avec façades végétalisées
+              pour améliorer la qualité de l’aire et réduire la chaleur urbaine
+            </p>
+          </div>
+          <div class="card-footer">
+            <div>
+              <h5><i class="fa-solid fa-handshake"></i> Partenaires</h5>
+              <p>Ville de Agadir</p>
+              <p>Ecobuild</p>
+              <p>Green-Arch</p>
+            </div>
+            <div>
+              <h5><i class="fa-solid fa-bullseye"></i> Objectif</h5>
+              <p>3 batiments Vertd d’ici 2027.</p>
+            </div>
+          </div>
+          <a href="#" class="btn-green">Découvrir le projet</a>
+        </div>
+        <div class="card" data-category="eau">
+          <img src="imgs/Eau.jpg" alt="Système de Recupération d’Eau" />
+          <div class="card-content">
+            <h3>Système de Recupération d’Eau</h3>
+            <small><i class="fa-solid fa-location-dot"></i> Fes</small>
+            <p>
+              Installation de citernes pour collecter et réutiliser l’eau de
+              pluie dans les espaces publics et les écoles.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div>
+              <h5><i class="fa-solid fa-handshake"></i> Partenaires</h5>
+              <p>Ville de Fes</p>
+              <p>AquaVert</p>
+              <p>ONEE</p>
+            </div>
+            <div>
+              <h5><i class="fa-solid fa-bullseye"></i> Objectif</h5>
+              <p>Economiser 10 millions de litres d’eau par an</p>
+            </div>
+          </div>
+          <a href="#" class="btn-green">Découvrir le projet</a>
+        </div>
+        <div class="card" data-category="biodiversite">
+          <img
+            src="imgs/jardin.jpg"
+            alt="Jardins Urbains Participatifs" />
+          <div class="card-content">
+            <h3>Jardins Urbains Participatifs</h3>
+            <small><i class="fa-solid fa-location-dot"></i>Tanger</small>
+            <p>
+              Creation d’espaces verts communautaires où les citoyens cultivent
+              des légumes biologiques et favorisent la biodiversité .
+            </p>
+          </div>
+          <div class="card-footer">
+            <div>
+              <h5><i class="fa-solid fa-handshake"></i> Partenaires</h5>
+              <p>Ville de Tanger</p>
+              <p>cultureper</p>
+              <p>Biodiversite</p>
+            </div>
+            <div>
+              <h5><i class="fa-solid fa-bullseye"></i> Objectif</h5>
+              <p>20 jardins urbains crees d’ici fin 2025</p>
+            </div>
+          </div>
+          <a href="#" class="btn-green">Découvrir le projet</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 GreenPulse. Tous droits réservés.</p>
+      <p>Designed by GreenPulse Team</p>
+    </footer>
+
+    <script>
+        // navbar responsive button
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      btn.addEventListener("click", () => {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      });
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) menu.style.display = "flex";
+        else menu.style.display = "none";
+      });
+
+
+      const filterBtns = document.querySelectorAll(".filters a");
+      const cards = document.querySelectorAll(".card");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.dataset.filter;
+
+          cards.forEach((card) => {
+            if (filter === "all") {
+              card.style.display = "block";
+            } else {
+              const categories = card.dataset.category.split(" ");
+              card.style.display = categories.includes(filter)
+                ? "block"
+                : "none";
+            }
+          });
+        });
+      });
+
+      // 🌙 Dark Mode Toggle
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        themeToggle.textContent = "☀️";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        const isDark = body.classList.contains("dark-mode");
+        themeToggle.textContent = isDark ? "☀️" : "🌙";
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+      });
+    </script>
+  </body>
 </html>
