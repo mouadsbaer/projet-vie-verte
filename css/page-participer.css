@@ -16,7 +16,7 @@ body {
 
 
 .header_globale {
-    background: url('imgs\pexels-akos-szabo-145938-440731.jpg') center/cover no-repeat;
+    background: url('../imgs/pexels-akos-szabo-145938-440731.jpg') center/cover no-repeat;
     height: 100vh;
     width: 100vw;
     display: flex;
