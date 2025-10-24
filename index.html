@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="css/page-acceuil.css">
-    <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <!-- Mohammed lfarh-->
@@ -20,11 +20,11 @@
                </div>
                <div class="menu">
                     <ul id="menuList">
-                        <li><a href="#">Acceuil</a></li>
-                        <li><a href="#">Projets</a></li>
-                        <li><a href="#">Participation</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Actualités</a></li>
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="page-projets.html">Projets</a></li>
+                        <li><a href="page-participer.html">Participation</a></li>
+                        <li><a href="page-education.html">Education</a></li>
+                        <li><a href="page-actualités.html">Actualités</a></li>
                     </ul>
                </div>
                <i class="fa-solid fa-bars" id="menuIcon"></i>
@@ -132,27 +132,6 @@
         <p>&copy 2025 GreenPulse. Tous droits réservés.</p>
         <p>Designed by GreenPulse Team</p>
     </footer>
-    <script>
-        const btn = document.getElementById("menu-btn");
-        const menu = document.getElementById("menu");
 
-        btn.addEventListener("click", () => {
-
-        if (menu.style.display === "flex") {
-          menu.style.display = "none";
-        } else {
-          menu.style.display = "flex";
-        }
-        });
-
-
-        window.addEventListener("resize", () => {
-          if (window.innerWidth >= 768) {
-            menu.style.display = "flex";
-          } else {
-            menu.style.display = "none";
-          }
-    });
-  </script>
 </body>
 </html>
